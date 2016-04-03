@@ -16,7 +16,7 @@
                 <img src="~/Content/img/solar2.png" />
             </div>
             <h4 class="list-group-item-heading">Solar Energy</h4>
-            <p id="slider1" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex1" type="text" /></p>
+            <p id="slider1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex1" type="text" /></p>
         </a>
     </div>
     <div class="list-group">
@@ -28,7 +28,7 @@
                 <img src="~/Content/img/energy2.png" />
             </div>
             <h4 class="list-group-item-heading">Energy Efficiency</h4>
-            <p id="slider2" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex2" type="text" /></p>
+            <p id="slider2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex2" type="text" /></p>
         </a>
     </div>
     <div class="list-group">
@@ -40,7 +40,7 @@
                 <img src="~/Content/img/climate2.png" />
             </div>
             <h4 class="list-group-item-heading">Climate Adaptation / Resiliency</h4>
-            <p id="slider3" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex3" type="text" /></p>
+            <p id="slider3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex3" type="text" /></p>
         </a>
     </div>
     <div class="list-group">
@@ -52,7 +52,7 @@
                 <img src="~/Content/img/electric2.png" />
             </div>
             <h4 class="list-group-item-heading">Electric Vehicles</h4>
-            <p id="slider4" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex4" type="text" /></p>
+            <p id="slider4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex4" type="text" /></p>
         </a>
     </div>
     <div class="list-group">
@@ -64,7 +64,7 @@
                 <img src="~/Content/img/local2.png" />
             </div>
             <h4 class="list-group-item-heading">Local Agriculture</h4>
-            <p id="slider5" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex5" type="text" /></p>
+            <p id="slider5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex5" type="text" /></p>
         </a>
     </div>
     <div class="btn-group pull-right" role="group" aria-label="...">
@@ -78,31 +78,6 @@
     @Scripts.Render("~/Scripts/js/modernizr.js")
     @Scripts.Render("~/Scripts/js/bootstrap-slider.js")
     <script>
-        $("#button1").click(function () {
-            $("#slider1").toggle();
-            $("#icon11").toggle();
-            $("#icon12").toggle();
-        });
-        $("#button2").click(function () {
-            $("#slider2").toggle();
-            $("#icon21").toggle();
-            $("#icon22").toggle();
-        });
-        $("#button3").click(function () {
-            $("#slider3").toggle();
-            $("#icon31").toggle();
-            $("#icon32").toggle();
-        });
-        $("#button4").click(function () {
-            $("#slider4").toggle();
-            $("#icon41").toggle();
-            $("#icon42").toggle();
-        });
-        $("#button5").click(function () {
-            $("#slider5").toggle();
-            $("#icon51").toggle();
-            $("#icon52").toggle();
-        });
         $("#ex1").slider({
             ticks: [0, 50, 100],
             ticks_labels: ['supporter', 'advocate', 'expert'],
@@ -128,4 +103,34 @@
             ticks_labels: ['supporter', 'advocate', 'expert'],
             ticks_snap_bounds: 50
         });
+        $("#button1").click(function () {
+            $("#slider1").toggle();
+            $("#icon11").toggle();
+            $("#icon12").toggle();
+        });
+        $("#button2").click(function () {
+            $("#slider2").toggle();
+            $("#icon21").toggle();
+            $("#icon22").toggle();
+        });
+        $("#button3").click(function () {
+            $("#slider3").toggle();
+            $("#icon31").toggle();
+            $("#icon32").toggle();
+        });
+        $("#button4").click(function () {
+            $("#slider4").toggle();
+            $("#icon41").toggle();
+            $("#icon42").toggle();
+        });
+        $("#button5").click(function () {
+            $("#slider5").toggle();
+            $("#icon51").toggle();
+            $("#icon52").toggle();
+        });
+        $("#slider1").hide();
+        $("#slider2").hide();
+        $("#slider3").hide();
+        $("#slider4").hide();
+        $("#slider5").hide();
     </script>
